@@ -1,0 +1,26 @@
+{
+  "name": "Food-Festival",
+  "version": "1.0.0",
+  "description": "A repository for Week 19 Module on PWAs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvicj/Food-Festival.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvicj/Food-Festival/issues"
+  },
+  "homepage": "https://github.com/dvicj/Food-Festival#readme",
+  "devDependencies": {
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
