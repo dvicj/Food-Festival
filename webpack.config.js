@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 //19.2.4 - entry property, the root of the bundle and beginning of dependency graph
 //output - where the bundled code will be sent 
@@ -17,6 +18,9 @@ module.exports = {
           $: "jquery",
           jQuery: "jquery"
         }),
+        new BundleAnalyzerPlugin({
+          analyzerMode: "static", // the report outputs to an HTML file in the dist folder
+        })
       ],
     mode: 'development'
 };
