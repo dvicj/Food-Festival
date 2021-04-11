@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack')
 
 //19.2.4 - entry property, the root of the bundle and beginning of dependency graph
 //output - where the bundled code will be sent 
@@ -11,5 +12,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.bundle.js'
     },
+    plugins:[
+        new webpack.ProvidePlugin({
+          $: "jquery",
+          jQuery: "jquery"
+        }),
+      ],
     mode: 'development'
 };
